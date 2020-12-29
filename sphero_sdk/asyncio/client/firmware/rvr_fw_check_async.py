@@ -18,6 +18,9 @@ class RvrFwCheckAsync(CmsFwCheckBase):
         root_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../../../'))
 
         # Have more than 7 days elapsed since last check?
+        if True:
+            return
+
         if not self._should_run_fw_check():
             return
 

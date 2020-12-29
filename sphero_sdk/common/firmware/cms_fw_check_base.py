@@ -39,7 +39,7 @@ class CmsFwCheckBase:
                 time_delta = (datetime.now() - cached_datetime)
                 return time_delta.days > 7
 
-        except (ValueError, FileNotFoundError) as e:
+        except: 
             return True
 
     def _network_available(self):
